@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DadBod Burgers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<head>
+    <style>
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loading-animation {
+            text-align: center;
+        }
+
+        .loader-logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .loading-bar {
+            width: 200px;
+            height: 4px;
+            background: #f0f0f0;
+            border-radius: 2px;
+            margin: 20px auto;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: #ff6b6b;
+            border-radius: 2px;
+            transition: width 2s ease;
+        }
+
+        .loading-text {
+            color: #333;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Jamzone logo.jpg" alt="Dadbod" style="width: 100px; height: 100px;">
+            </div>
+            <h1>JAMZONE</h1>
+            <nav>
+                <ul>
+                    <li><a href="DadBod.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="contact-page">
+       
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1>Get in Touch</h1>
+                <p>We're here to serve you better!</p>
+            </div>
+        </section>
+
+        <section class="quick-contact">
+            <div class="container">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Call Us</h3>
+                        <p>09913271156</p>
+                        <span class="availability">Available 10AM - 10PM</span>
+                    </div>
+        
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>jamzonelucena@gmail.com</p>
+                        <span class="availability">24/7 Support</span>
+                    </div>
+        
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>Enriquez st cor Hermana Fausta St 4301 Lucena, Philippines</p>
+                        <span class="availability">View on Map</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="business-hours">
+            <div class="container">
+                <h2>Operating Hours</h2>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <span class="day">Monday - Saturday</span>
+                        <span class="time">10:00 AM - 10:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span class="day">Sunday</span>
+                        <span class="time">11:00 AM - 9:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="catering">Catering Services</option>
+                                <option value="complaint">Complaint</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3><i class="fas fa-truck"></i> Delivery Services</h3>
+                        <p>We offer delivery through Foodpanda, GrabFood, and our own delivery service.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><i class="fas fa-users"></i> Group Orders</h3>
+                        <p>For bulk orders, please contact us 24 hours in advance.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3><i class="fas fa-utensils"></i> Catering</h3>
+                        <p>Yes, we provide catering services for events. Contact us for packages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/JAMZONEKH" target="_blank" class="social-icon facebook" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/jam.zone/" target="_blank" class="social-icon instagram" aria-label="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/yourburgerbusiness" target="_blank" class="social-icon twitter" aria-label="Follow us on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@Jam.zone?fbclid=IwY2xjawHOSTtleHRuA2FlbQIxMAABHVM1eF5tRcLRLcsEJcWOKa1jg2bwY0aXX8Z5BXV36dgWrUe477aCoQOxww_aem_V5mHfwPGl0HzfqNns1hhtg" target="_blank" class="social-icon tiktok" aria-label="Follow us on TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2024 JAMZONE. Come and taste the finest local fastfood in town.</p>
+    </footer>
+    <body>
+        
+        <div id="preloader">
+            <div class="loading-animation">
+                <img src="Jamzone logo.jpg" alt="Jamzone Logo" class="loader-logo">
+                <div class="loading-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="loading-text">Loading...</div>
+            </div>
+        </div>
+    
+        <script>
+            // Preloader
+            window.addEventListener('load', function() {
+                const preloader = document.getElementById('preloader');
+                const progress = document.querySelector('.progress');
+                
+                progress.style.width = '100%';
+                
+                setTimeout(() => {
+                    preloader.style.opacity = '0';
+                    preloader.style.transition = 'opacity 0.5s ease';
+                    
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }, 2500);
+            });
+    
+            // Form handling
+            document.querySelector('.contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+    
+                // Show loading state
+                const submitBtn = this.querySelector('.submit-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+    
+                // Simulate form submission (replace with actual API call)
+                setTimeout(() => {
+                    // Reset form
+                    this.reset();
+                    
+                    // Show success message
+                    alert('Thank you for your message! We will get back to you soon.');
+                    
+                    // Reset button
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+    
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    
+            // Animate elements on scroll
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.contact-card, .faq-item');
+                
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight * 0.8) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+    
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initial check
+        </script>
+    </body>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DadBod Burgers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<head>
+        <!-- Add these lines after your existing CSS links -->
+        <style>
+            #preloader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+            }
+    
+            .loading-animation {
+                text-align: center;
+            }
+    
+            .loader-logo {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+    
+            .loading-bar {
+                width: 200px;
+                height: 4px;
+                background: #f0f0f0;
+                border-radius: 2px;
+                margin: 20px auto;
+            }
+    
+            .progress {
+                width: 0%;
+                height: 100%;
+                background: #ff6b6b;
+                border-radius: 2px;
+                transition: width 2s ease;
+            }
+    
+            .loading-text {
+                color: #333;
+                font-size: 16px;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Jamzone logo.jpg" alt="Dadbod">
+            </div>
+            <h1>JAMZONE</h1>
+            <nav>
+                <ul>
+                    <li><a href="DadBod.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <h2>Our Story</h2>
+            <div class="awards">
+                <p>🎖PSMA 2018 Star Brand Awardee</p>
+                <p>🎖Elite Business Excellence Awardee 2018</p>
+                <p>🍔Premier Burger Specialty Restaurant</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="about-section">
+                <h3>Who We Are</h3>
+                <p>Jamzone was founded in 2015 with a simple mission: to serve the best burgers in town. We use only the freshest ingredients and prepare each burger with care and attention to detail.</p>
+            </div><br><br>
+
+            <div class="about-section">
+                <h3>Our Mission</h3>
+                <p>Our commitment to quality and customer satisfaction has made us a local favorite. We're not just selling burgers; we're creating experiences and memories for our customers.</p>
+            </div><br><br>
+
+            <div class="about-section">
+                <h3>Quality Commitment</h3>
+                <p>Every meal is made fresh to order using premium ingredients:
+                    <ul>
+                        <li>100% Fresh beef patties</li>
+                        <li>Locally sourced vegetables</li>
+                        <li>Freshly baked buns</li>
+                        <li>Fresh Meats</li>
+                        <li>House-made special sauces</li>
+                    </ul>
+                </p>
+            </div><br><br>
+
+            <div class="about-section">
+                <h3>Why We Do What We Do</h3>
+                <p>When someone asks if you want to go for a cheeseburger run, you know they're looking for comfort food-- something that will satisfy their emotions and feelings, not just their hunger or cravings. The word "cheeseburger" sounds very comforting, very home-y. It's the type of food you'd want to eat with your homies—and that's how Hungry Homies came about.
+                    Miggy Cruz, aka the head homie, started cooking burgers for family and friends back in 2020. This was during the pandemic when everybody just stayed at home and nobody could really see friends and family like we used to. He kept making burgers the way he would imagine what a perfect burger would taste like and sent it to friends, as a homie looking out for 
+                    another homie. It's homemade, it's comforting, it's like "hanging out with your best friends at a backyard while eating good food" type of thing. The concept of our brand is literally our company name: we want to serve our hungry homies. When you order from us, you order from a homie—and we'll make sure you're happy and satisfied after eating our cheeseburgers
+                    So the next time you order from us, think of us as your brother / sister / dude / dudette / bestie / special someone / fam / homie cooking your favorite burger.</p>
+            </div>
+        </section>
+        
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/DadbodBurgers/about_profile_transparency/" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/dadbodburgers/" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/yourburgerbusiness" target="_blank" class="social-icon twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@Jam.zone?fbclid=IwY2xjawHOSTtleHRuA2FlbQIxMAABHVM1eF5tRcLRLcsEJcWOKa1jg2bwY0aXX8Z5BXV36dgWrUe477aCoQOxww_aem_V5mHfwPGl0HzfqNns1hhtg" target="_blank" class="social-icon tiktok" aria-label="Follow us on TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+        <p>&copy; Come and taste the finest local fastfood in town.</p>
+    </footer>
+    <body>
+        <!-- Add this right after the body tag opens -->
+        <div id="preloader">
+            <div class="loading-animation">
+                <img src="Jamzone logo.jpg" alt="Jamzone Logo" class="loader-logo">
+                <div class="loading-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="loading-text">Loading...</div>
+            </div>
+        </div>
+    
+        <!-- Add this right before the closing body tag -->
+        <script>
+            window.addEventListener('load', function() {
+                const preloader = document.getElementById('preloader');
+                const progress = document.querySelector('.progress');
+                
+                // Animate the progress bar
+                progress.style.width = '100%';
+                
+                // Hide preloader after animation
+                setTimeout(() => {
+                    preloader.style.opacity = '0';
+                    preloader.style.transition = 'opacity 0.5s ease';
+                    
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }, 2500); // Total loading time: 2.5 seconds
+            });
+        </script>
+    </body>
+</body>
+</html>

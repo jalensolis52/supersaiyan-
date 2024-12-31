@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Jamzone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>JAMZONE</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="Jamzone logo.jpg" alt="Jamzone" style="width: 100px; height: 100px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="DadBod.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html" class="active">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="location-page">
+        <section class="location-hero">
+            <h1>Visit Us Today</h1>
+            <p>Find your nearest Jamzone location</p>
+        </section>
+
+        <section class="main-location">
+            <div class="location-info">
+                <h2>Our Location</h2>
+                <div class="address-details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Enriquez st cor Hermana Fausta St 4301 Lucena, Philippines</p>
+                </div>
+                <div class="hours-details">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li><span>Monday - Thursday:</span> 10:00 AM - 10:00 PM</li>
+                        <li><span>Friday - Saturday:</span> 10:00 AM - 11:00 PM</li>
+                        <li><span>Sunday:</span> 11:00 AM - 9:00 PM</li><br><br>
+                    </ul>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.318980983283!2d121.6115509744787!3d13.939603086472099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd4b5855a1124d%3A0xb28c977e6e1b4e58!2sJamzone%20Milktea%20House!5e0!3m2!1sen!2sph!4v1734448739700!5m2!1sen!2sph" width="1500" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"
+                    width="100%" 
+                    height="750" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/DadbodBurgers/about_profile_transparency/" target="_blank" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/dadbodburgers/" target="_blank" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/yourburgerbusiness" target="_blank" class="social-icon twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@Jam.zone?fbclid=IwY2xjawHOSTtleHRuA2FlbQIxMAABHVM1eF5tRcLRLcsEJcWOKa1jg2bwY0aXX8Z5BXV36dgWrUe477aCoQOxww_aem_V5mHfwPGl0HzfqNns1hhtg" target="_blank" class="social-icon tiktok" aria-label="Follow us on TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+        <p>&copy; Come and taste the finest burger in town.</p>
+    </footer>
+    <body>
+        <!-- Add this right after the body tag opens -->
+        <div id="preloader">
+            <div class="loading-animation">
+                <img src="Jamzone logo.jpg" alt="Jamzone Logo" class="loader-logo">
+                <div class="loading-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="loading-text">Loading...</div>
+            </div>
+        </div>
+    
+        <!-- Add this right before the closing body tag -->
+        <script>
+            window.addEventListener('load', function() {
+                const preloader = document.getElementById('preloader');
+                const progress = document.querySelector('.progress');
+                
+                // Animate the progress bar
+                progress.style.width = '100%';
+                
+                // Hide preloader after animation
+                setTimeout(() => {
+                    preloader.style.opacity = '0';
+                    preloader.style.transition = 'opacity 0.5s ease';
+                    
+                    setTimeout(() => {
+                        preloader.style.display = 'none';
+                    }, 500);
+                }, 2500); // Total loading time: 2.5 seconds
+            });
+        </script>
+    </body>
+</body>
+</html>

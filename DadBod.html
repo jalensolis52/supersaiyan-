@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hub - Delicious Burgers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Dadbod</title>
+</head>
+<body>
+    
+<div id="preloader">
+    <div class="loading-animation">
+        <img src="Jamzone logo.jpg" alt="Jamzone Logo" class="loader-logo">
+        <div class="loading-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="loading-text">Loading...</div>
+    </div>
+</div>
+
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <div class="container">
+            <div class="logo">
+                <img src="Jamzone logo.jpg" alt="Dadbod">
+            </div>
+            <h1>JAMZONE</h1>
+            <nav>
+                <ul>
+                    <li><a href="JAMZONE.html">Home</a></li>  
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <a href="#menu" class="cta-button">View Menu</a>
+            <div class="menu-content">
+                <div class="menu-grid">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Our BestSellers</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="JamVeggie.jpg" alt="Cheese Burger">
+                    <h3>Veggie Beef Sandwich</h3>
+                    <p>Freshly toasted loaf bread,our classic burger topped with lettuce, tomato, onionand our special sauce</p>
+                    <span class="price">₱65</span>
+                </div>
+                <div class="menu-item">
+                    <img src="ham and egg.jpg" alt="Bacon Burger">
+                    <h3>Ham & Egg Sandwich</h3>
+                    <p>Freshly toasted loaf bread, perfectly cooked ham and egg with cheese<p>>
+                    <span class="price">₱65</span>
+                </div>
+                <div class="menu-item">
+                    <img src="chicken sandwich.jpg" alt="Veggie Burger">
+                    <h3>Chicken Burger</h3>
+                    <p>Freshly toasted loaf bread,Crispy chicken with lettuce, and our special sauce</p>
+                    <span class="price">₱70</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About JAMZONE</h2>
+            <p>🎖PSMA 2018 Star Brand Awardee<br>
+                🎖Elite Business Excellence Awardee 2018<br>
+                🍔Premier Burger Specialty Restaurant<br><br></p>
+            <p>Jamzone is a popular local fast food chain based in Lucena City, Quezon, Philippines.
+                It is well-known for offering affordable, tasty, and Filipino-style fast food options,
+                 making it a favorite among locals. The restaurant caters to a broad audience, including families, 
+                 students, and workers, by providing quick, satisfying meals in a casual setting.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: 09913271156</p>
+            <p>Email: jamzonelucena@gmail.com</p>
+            <p>Address: Enriquez st cor Hermana Fausta St 4301 Lucena, Philippines</p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/JAMZONEKH" target="_blank" class="social-icon facebook" aria-label="Visit our Facebook page">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/jam.zone/" target="_blank" class="social-icon instagram" aria-label="Follow us on Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com/yourburgerbusiness" target="_blank" class="social-icon twitter" aria-label="Follow us on Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.tiktok.com/@Jam.zone?fbclid=IwY2xjawHOSTtleHRuA2FlbQIxMAABHVM1eF5tRcLRLcsEJcWOKa1jg2bwY0aXX8Z5BXV36dgWrUe477aCoQOxww_aem_V5mHfwPGl0HzfqNns1hhtg" target="_blank" class="social-icon tiktok" aria-label="Follow us on TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+        <p>&copy; Come and taste the finest local fastfood in town.</p>
+    </footer>
+    
+<script>
+    document.querySelector('.cta-button').addEventListener('click', function(e) {
+        e.preventDefault(); 
+        
+        const menuSection = document.querySelector('#menu');
+        
+        menuSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+    </script>
+    </body>
+    <script>
+        // Preloader animation
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            
+            // Simulate loading time
+            setTimeout(() => {
+                // Add fade-out effect
+                preloader.style.opacity = '0';
+                preloader.style.transition = 'opacity 0.5s ease';
+                
+                // Remove preloader from DOM after fade
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }, 2500); // Total loading time: 2.5 seconds
+        });
+        
+        // Your existing smooth scroll code
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            const menuSection = document.querySelector('#menu');
+            menuSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+        </script>
+</html>
